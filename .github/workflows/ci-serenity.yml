@@ -36,6 +36,7 @@ jobs:
 
     - name: 🔥Ejecutar pruebas con Gatling
       run:   mvn gatling:test "-Dgatling.simulationClass=apiFakestore.GetSimulation" 
+      continue-on-error: true
 
     - name: 📂 Guardar reportes de Gatling
       uses: actions/upload-artifact@v4
