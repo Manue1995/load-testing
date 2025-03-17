@@ -34,6 +34,8 @@ jobs:
     - name: 🔥Ejecutar pruebas con Gatling
       run: |
           mvn gatling:test 
+      env:
+          GATLING_SIMULATIONS_FOLDER: src/test/scala
 
     - name: 📂 Guardar reportes de Gatling
       uses: actions/upload-artifact@v4
