@@ -32,7 +32,7 @@ jobs:
       run: mvn clean install -DskipTests
 
     - name: 🔥Ejecutar pruebas con Gatling
-      run:   mvn gatling:test "-Dgatling.simulationClass=apiFakestore.GetSimulation"
+      run:   mvn gatling:test "-Dgatling.simulationClass=apiFakestore.GetSimulation -Dgatling.skipFork=true" 
 
     - name: 📂 Guardar reportes de Gatling
       uses: actions/upload-artifact@v4
