@@ -32,7 +32,8 @@ jobs:
       run: mvn clean install -DskipTests
 
     - name: 🔥Ejecutar pruebas con Gatling
-      run: mvn gatling:test -Dgatling.simulationClass=apis.simulation.GetUsersSimulation
+      run: |
+          mvn gatling:test 
 
     - name: 📂 Guardar reportes de Gatling
       uses: actions/upload-artifact@v4
