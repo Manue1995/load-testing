@@ -6,7 +6,7 @@ import io.gatling.http.Predef._
 import scala.io.Source
 
 class PutSimulation extends Simulation {
-/*
+
   val httpProtocol = http.baseUrl("https://fakestoreapi.com")
 
   val putBody = Source.fromFile("src/main/resources/data/update_product.json").mkString
@@ -18,6 +18,6 @@ class PutSimulation extends Simulation {
       .check(status.is(200))
     )
 
-  setUp(putScenario.inject(atOnceUsers(2))).protocols(httpProtocol)*/
+  setUp(putScenario.inject(atOnceUsers(2))).protocols(httpProtocol)
 
 }

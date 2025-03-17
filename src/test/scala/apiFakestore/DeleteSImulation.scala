@@ -4,7 +4,7 @@ import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 
 class DeleteSImulation extends Simulation{
-/*
+
   val httpProtocol = http.baseUrl("https://fakestoreapi.com")
 
   val deleteScenario = scenario("DELETE Product")
@@ -14,5 +14,5 @@ class DeleteSImulation extends Simulation{
     )
 
   setUp(deleteScenario.inject(atOnceUsers(1))).protocols(httpProtocol)
-*/
+
 }
