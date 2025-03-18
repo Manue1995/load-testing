@@ -1,4 +1,4 @@
-# bbog-apis-of-load-testing
+# apis-of-load-testing
 
 **Comandos:**
 
